@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": false,
+    "python.languageServer": "None",
+    "python.linting.pylintArgs": ["--disable=C0111"]
+}
