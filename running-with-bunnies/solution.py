@@ -17,9 +17,6 @@ def solution(times, time_limit):
     while len(queue) != 0:
         time_spent, (pos, bunnies) = heapq.heappop(queue)
 
-        if pos == len(times) - 1 and time_spent <= 0 and all(bunnies):
-            return [i for i in range(len(times) - 2)]
-
         if (pos, bunnies) in visited:
             visited[(pos, bunnies)] = min(visited[(pos, bunnies)], time_spent)
         else:
